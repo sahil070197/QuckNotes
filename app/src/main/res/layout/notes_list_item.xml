@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_margin="4dp"
+        android:layout_marginBottom="8dp"
+        app:cardElevation="3dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_margin="4dp"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="30sp"
+                android:paddingLeft="16dp"
+                android:paddingRight="8dp"
+                android:paddingTop="4dp"
+                android:text="Sample title"
+                android:id="@+id/title"
+                android:textColor="@color/primaryText"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="25sp"
+                android:text="Sample Text"
+                android:textColor="@color/primaryText"
+                android:id="@+id/body"
+                android:paddingRight="8dp"
+                android:paddingLeft="16dp"
+                android:layout_marginTop="4dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:text="Sample Date"
+                android:textAlignment="viewEnd"
+                android:textColor="@color/secondaryText"
+                android:id="@+id/date"
+                android:padding="@dimen/appbar_padding_top"
+                android:layout_marginTop="8dp"/>
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:padding="@dimen/padding_dimension"
+    android:layout_height="match_parent">
+    <ImageView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:id="@+id/setupLabel"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/ic_https_black_24dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="@string/screen_two_text"
+        android:textSize="@dimen/boarding_screen_text_size"
+        android:textColor="@color/primaryText"
+        android:layout_below="@id/setupLabel"
+        android:id="@+id/PinText"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:inputType="numberPassword"
+        android:layout_below="@id/PinText"
+        android:background="@drawable/shape_rectangular_border"
+        android:minHeight="40dp"
+        android:layout_marginTop="16dp"
+        android:id="@+id/pinSetter"
+        android:hint="@string/pin_edittext_hint"
+        android:maxLength="4"/>
+</RelativeLayout>
